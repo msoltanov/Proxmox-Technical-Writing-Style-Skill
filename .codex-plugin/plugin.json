@@ -1,0 +1,8 @@
+{
+  "name": "proxmox-writing-style",
+  "version": "1.0.0",
+  "description": "Write, edit, or review Proxmox technical documentation in the Proxmox Technical Writing Style Guide voice.",
+  "skills": "./skills/",
+  "license": "MIT",
+  "repository": "https://github.com/msoltanov/Proxmox-Technical-Writing-Style-Skill"
+}
