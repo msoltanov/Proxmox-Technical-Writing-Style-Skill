@@ -1,0 +1,6 @@
+{
+  "instructions": [
+    ".kilo/rules/proxmox-writing-style.md",
+    "skills/proxmox-writing-style/SKILL.md"
+  ]
+}

@@ -1,0 +1,9 @@
+# Archived work, not tracked
+_archive/
+
+# Task/planning logs, not tracked
+tasks/
+
+# OS cruft
+.DS_Store
+Thumbs.db
