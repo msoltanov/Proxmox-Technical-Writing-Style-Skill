@@ -59,6 +59,8 @@ To report a problem or to ask for a change, open an issue:
 
 https://github.com/msoltanov/Proxmox-Technical-Writing-Style-Skill/issues
 
+To change the skill, read [CONTRIBUTING.md](CONTRIBUTING.md). To report a security problem, read [SECURITY.md](SECURITY.md).
+
 ## License
 
 MIT. Read [LICENSE](LICENSE).
