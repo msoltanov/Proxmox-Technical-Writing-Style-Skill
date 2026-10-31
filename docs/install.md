@@ -1,54 +1,113 @@
-# Install the Proxmox Writing Skill
+# Install the Proxmox Writing Style Skill
 
-This project ships one file: [skills/proxmox-writing-style/SKILL.md](../skills/proxmox-writing-style/SKILL.md).
+The skill is one folder: [skills/proxmox-writing-style](../skills/proxmox-writing-style). The main file is `SKILL.md`.
 
-Point each tool at this file, or copy it into the tool's own skill or rules directory.
+Install it as a plugin, upload it as a zip, or copy the folder into the skill directory of the tool.
 
-## Claude Code
+## Claude Code Plugin
 
-Claude Code reads Agent Skills from `.claude/skills` for a project or `~/.claude/skills` for a user.
+Run these commands in a terminal:
 
-Project install:
+```bash
+claude plugin marketplace add msoltanov/Proxmox-Technical-Writing-Style-Skill
+```
+
+```bash
+claude plugin install proxmox-writing-style@proxmox-writing-style
+```
+
+In a Claude Code session, you can also type:
+
+```text
+/plugin marketplace add msoltanov/Proxmox-Technical-Writing-Style-Skill
+/plugin install proxmox-writing-style@proxmox-writing-style
+```
+
+## Claude Code Skill Folder
+
+Claude Code reads skills from `.claude/skills` for a project and from `~/.claude/skills` for a user.
+
+Project install on Linux or macOS:
+
+```bash
+mkdir -p .claude/skills && cp -R skills/proxmox-writing-style .claude/skills/
+```
+
+User install on Linux or macOS:
+
+```bash
+mkdir -p ~/.claude/skills && cp -R skills/proxmox-writing-style ~/.claude/skills/
+```
+
+Project install on Windows:
 
 ```powershell
 New-Item -ItemType Directory -Force .claude/skills
 Copy-Item -Recurse skills/proxmox-writing-style .claude/skills/
 ```
 
-User install:
+User install on Windows:
 
 ```powershell
 New-Item -ItemType Directory -Force ~/.claude/skills
 Copy-Item -Recurse skills/proxmox-writing-style ~/.claude/skills/
 ```
 
-Invoke it directly with `/proxmox-writing-style`, or let Claude load it when the task matches the description.
+To start the skill, type `/proxmox-writing-style`. Claude also loads the skill when the task matches the description.
 
-## Codex
+## Claude Apps (claude.ai and Claude Desktop)
 
-Codex reads Agent Skills from `.agents/skills` for a project and `$HOME/.agents/skills` for a user.
+1. Get `proxmox-writing-style.zip` from the release page of this repository. You can also build the zip with `./scripts/package-skill.sh`. The script writes `dist/proxmox-writing-style.zip`.
+2. In Claude, open **Settings** > **Capabilities**.
+3. In the **Skills** section, upload the zip.
+4. Turn on the skill.
 
-Project install:
+## Codex Plugin
 
-```powershell
-New-Item -ItemType Directory -Force .agents/skills
-Copy-Item -Recurse skills/proxmox-writing-style .agents/skills/
+Run these commands in a terminal:
+
+```bash
+codex plugin marketplace add msoltanov/Proxmox-Technical-Writing-Style-Skill
 ```
 
-User install:
-
-```powershell
-New-Item -ItemType Directory -Force ~/.agents/skills
-Copy-Item -Recurse skills/proxmox-writing-style ~/.agents/skills/
+```bash
+codex plugin add proxmox-writing-style@proxmox-writing-style
 ```
 
-Invoke it directly with `$proxmox-writing-style`, or let Codex load it when the task matches the description.
+## Codex Skill Folder
+
+Codex reads skills from `.agents/skills` for a project and from `~/.agents/skills` for a user.
+
+Project install on Linux or macOS:
+
+```bash
+mkdir -p .agents/skills && cp -R skills/proxmox-writing-style .agents/skills/
+```
+
+User install on Linux or macOS:
+
+```bash
+mkdir -p ~/.agents/skills && cp -R skills/proxmox-writing-style ~/.agents/skills/
+```
+
+On Windows, use the PowerShell commands from the Claude Code section. Change `.claude/skills` to `.agents/skills`.
+
+To start the skill, type `$proxmox-writing-style`. Codex also loads the skill when the task matches the description.
+
+## ChatGPT
+
+ChatGPT does not install skill folders from this repository. Use a custom GPT:
+
+1. In ChatGPT, open **GPTs** > **Create** > **Configure**.
+2. Copy the text of `SKILL.md` after the second `---` line into **Instructions**.
+3. Upload `references/examples.md` as a **Knowledge** file.
+4. Save the GPT.
 
 ## Cline
 
 Cline reads project rules from `.clinerules/`.
 
-This repository includes `.clinerules/proxmox-writing-style.md`. Copy it into the target project's `.clinerules/` directory.
+This repository includes `.clinerules/proxmox-writing-style.md`. Copy the file into the `.clinerules/` directory of the target project.
 
 For global rules, copy the file into the Cline global rules directory for your operating system.
 
@@ -56,41 +115,41 @@ For global rules, copy the file into the Cline global rules directory for your o
 
 Kilo Code reads instruction files from `kilo.jsonc` or `.kilo/rules/`.
 
-This repository includes both:
+This repository includes these files:
 
 - `kilo.jsonc`
 - `.kilo/rules/proxmox-writing-style.md`
 
-Copy both files into the target project. Keep the `instructions` entry in `kilo.jsonc`.
+Copy the two files into the target project. Keep the `instructions` entry in `kilo.jsonc`.
 
 ## Aider
 
-Aider can load read-only convention files from `.aider.conf.yml`.
+Aider loads read-only convention files from `.aider.conf.yml`.
 
-This repository includes:
+This repository includes these files:
 
 - `.aider.conf.yml`
 - `CONVENTIONS.md`
 
-Copy both files into the target project. Aider reads the convention file at startup.
+Copy the two files into the target project. Aider reads the convention file at startup.
 
 ## opencode
 
-opencode reads `AGENTS.md` and can also load files through `opencode.json`.
+opencode reads `AGENTS.md`. It also loads files through `opencode.json`.
 
-This repository includes:
+This repository includes these files:
 
 - `AGENTS.md`
 - `opencode.json`
 
-Copy both files into the target project. The config loads the canonical skill as an instruction file.
+Copy the two files into the target project. The configuration loads the skill as an instruction file.
 
-## Generic Agents
+## Other Agents
 
-For any tool with custom instructions, add this text:
+For a tool with custom instructions, add this text:
 
 ```text
 When you write, edit, or review Proxmox technical documentation, read skills/proxmox-writing-style/SKILL.md and follow it.
 ```
 
-For tools that support repository instructions, commit `AGENTS.md` at the project root.
+For a tool that reads repository instructions, commit `AGENTS.md` at the project root.

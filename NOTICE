@@ -1,0 +1,20 @@
+Proxmox Writing Style Skill
+Copyright (c) 2026 Mekan Soltanov
+
+This project is unofficial. Proxmox Server Solutions GmbH does not sponsor,
+endorse, or review this project.
+
+Proxmox, Proxmox VE, Proxmox Backup Server, and Proxmox Mail Gateway are
+trademarks of Proxmox Server Solutions GmbH. This project uses the names only
+to identify the documentation that the skill is for.
+
+The skill rules are a short summary, in new words, of the Proxmox Technical
+Writing Style Guide:
+
+  https://pve.proxmox.com/wiki/Technical_Writing_Style_Guide
+  Revision 12596, last edited 2026-05-27 09:17
+
+This project does not copy the text of the guide. The MIT License in LICENSE
+applies to the text and files of this project only. It does not apply to the
+Proxmox Technical Writing Style Guide. The license of the guide is set by its
+owner.

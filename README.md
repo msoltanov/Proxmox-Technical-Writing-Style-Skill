@@ -1,22 +1,49 @@
 # Proxmox Writing Style Skill
 
-This project is a minimal AI-agent skill for the Proxmox Technical Writing Style Guide.
+This project is an AI-agent skill for the Proxmox Technical Writing Style Guide.
 
-Use it to write, edit, or review Proxmox technical documentation with Claude Code, Codex, opencode, Cline, Kilo Code, Aider, or any other AI tool that reads instruction files.
+Use it to write, edit, or review Proxmox technical documentation with Claude, Codex, ChatGPT, opencode, Cline, Kilo Code, Aider, or another AI tool that reads instruction files.
 
 ## Status
 
-This project is unofficial. Proxmox Server Solutions GmbH does not sponsor, endorse, or review this project. Proxmox, Proxmox VE, and related names are trademarks of their owner.
+This project is unofficial. Proxmox Server Solutions GmbH does not sponsor, endorse, or review this project. Proxmox, Proxmox VE, and related names are trademarks of their owner. For details, read [NOTICE](NOTICE).
 
-## The skill
+## Install
 
-The canonical skill is [skills/proxmox-writing-style/SKILL.md](skills/proxmox-writing-style/SKILL.md).
+Claude Code:
 
-It is a single Markdown file with YAML frontmatter. It needs no install, no build, and no dependencies. Copy it into a tool's skill or rules directory, or point the tool's instruction file at it.
+```bash
+claude plugin marketplace add msoltanov/Proxmox-Technical-Writing-Style-Skill
+```
 
-## Setup
+```bash
+claude plugin install proxmox-writing-style@proxmox-writing-style
+```
 
-See [docs/install.md](docs/install.md) for the setup steps for each tool.
+Codex:
+
+```bash
+codex plugin marketplace add msoltanov/Proxmox-Technical-Writing-Style-Skill
+```
+
+```bash
+codex plugin add proxmox-writing-style@proxmox-writing-style
+```
+
+For the Claude apps, ChatGPT, and other tools, read [docs/install.md](docs/install.md).
+
+## The Skill
+
+The skill is [skills/proxmox-writing-style/SKILL.md](skills/proxmox-writing-style/SKILL.md). It is a Markdown file with YAML frontmatter. It needs no build and no dependencies.
+
+The folder also contains these files:
+
+- [references/examples.md](skills/proxmox-writing-style/references/examples.md): before and after rewrites for each rule group
+- [agents/openai.yaml](skills/proxmox-writing-style/agents/openai.yaml): the display name and the default prompt for Codex
+
+## Tests
+
+[evals/evals.json](evals/evals.json) contains test prompts and the expected results. Run each prompt with the skill installed, and compare the output with the expected result.
 
 ## Source
 
@@ -25,3 +52,13 @@ The rules come from the Proxmox Technical Writing Style Guide:
 https://pve.proxmox.com/wiki/Technical_Writing_Style_Guide
 
 The recorded revision is `12596`, last edited 2026-05-27 09:17.
+
+## Support
+
+To report a problem or to ask for a change, open an issue:
+
+https://github.com/msoltanov/Proxmox-Technical-Writing-Style-Skill/issues
+
+## License
+
+MIT. Read [LICENSE](LICENSE).

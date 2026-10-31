@@ -1,0 +1,53 @@
+{
+  "skill_name": "proxmox-writing-style",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Rewrite this for the Proxmox VE admin guide: \"PVE supports ZFS, LVM and Ceph, e.g. for VM disks. You should enable thin provisioning.\"",
+      "expected_output": "Uses 'Proxmox VE', not 'PVE'. Adds the Oxford comma. Replaces 'e.g.' with 'for example'. Replaces 'You should enable' with the imperative 'Enable'.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Review this Proxmox wiki paragraph for style problems and list each one: \"We recommend that one uses a USB stick. Plug it into the mainboard, then boot Proxmox.\"",
+      "expected_output": "Reports 'one' as a pronoun, 'USB stick' (use 'USB flash drive'), 'mainboard' (use 'motherboard'), and 'Proxmox' alone as a product name. Gives a rule, the problem text, and a rewrite for each.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Turn this into a Proxmox-style procedure: \"To create a container go to the node, click Create CT, pick a template, set the password and the network and then finish.\"",
+      "expected_output": "Has a descriptive heading. Uses a numbered list with one action per step and parallel structure. Writes 'container' in prose and keeps 'Create CT' only as the UI item name.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Fix the capitalization of these Proxmox doc headings. Level 2: \"setting up a ceph cluster on three nodes\". Level 4: \"Adding An OSD To The Pool\".",
+      "expected_output": "Level 2 uses title style: 'Setting Up a Ceph Cluster on Three Nodes'. Level 4 uses sentence style: 'Adding an OSD to the pool'.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Write two sentences of Proxmox Backup Server release notes about a new pruning simulator in the web UI.",
+      "expected_output": "Uses 'Proxmox Backup Server', not 'PBS'. Uses third-person indicative mood. Writes 'web UI' or 'web interface' with exact capitalization. Has no first-person singular.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Edit for Proxmox style: \"1. Type pvecm status. 2. Press Enter. 3. Check that the cluster is quorate, i.e. that it has a majority, approx. half the nodes plus one.\"",
+      "expected_output": "Puts 'press Enter' in the same step as the command. Replaces 'i.e.' with 'that is' and 'approx.' with 'about'.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Write one Proxmox doc sentence that introduces software-defined networking for the first time and then mentions it again by short name.",
+      "expected_output": "Spells out 'software-defined networking' at first use with '(SDN)' in parentheses. Uses 'SDN' after that. Hyphenates the compound modifier.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Review this Proxmox doc sentence: \"The cluster manager - which is a command line tool - might be used by admins to manage VMs and CTs.\"",
+      "expected_output": "Changes the spaced hyphens to unspaced em dashes. Writes 'command-line tool'. Removes 'might' and passive voice. Writes 'guests' or 'virtual machines and containers' instead of 'VMs and CTs'.",
+      "files": []
+    }
+  ]
+}
