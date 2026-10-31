@@ -1,9 +1,5 @@
 # Changelog
 
-## Unreleased
-
-- Add `SECURITY.md`, `.codexignore`, the HOL plugin scanner workflow, and Dependabot for GitHub Actions.
-
 ## 1.0.0
 
 - Add the `proxmox-writing-style` skill. The rules come from revision `12596` of the Proxmox Technical Writing Style Guide.
@@ -15,3 +11,5 @@
 - Add instruction files for Cline, Kilo Code, Aider, and opencode.
 - Add `LICENSE` and `NOTICE`.
 - Add the plugin icon in `assets/icon.svg` and `assets/icon.png`.
+- Add `SECURITY.md`, `.codexignore`, the HOL plugin scanner workflow, and Dependabot for GitHub Actions.
+- Add `CONTRIBUTING.md`.

@@ -18,3 +18,7 @@ This project does not copy the text of the guide. The MIT License in LICENSE
 applies to the text and files of this project only. It does not apply to the
 Proxmox Technical Writing Style Guide. The license of the guide is set by its
 owner.
+
+The wiki does not state a license for its text. The GNU Affero General Public
+License, version 3 (AGPLv3) applies to the Proxmox VE code. It does not apply
+to this project, because this project contains no Proxmox code.
