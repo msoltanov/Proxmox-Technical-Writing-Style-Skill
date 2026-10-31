@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Add `SECURITY.md`, `.codexignore`, the HOL plugin scanner workflow, and Dependabot for GitHub Actions.
+
 ## 1.0.0
 
 - Add the `proxmox-writing-style` skill. The rules come from revision `12596` of the Proxmox Technical Writing Style Guide.
