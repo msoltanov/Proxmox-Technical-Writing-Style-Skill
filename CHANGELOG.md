@@ -13,3 +13,4 @@
 - Add the plugin icon in `assets/icon.svg` and `assets/icon.png`.
 - Add `SECURITY.md`, `.codexignore`, the HOL plugin scanner workflow, and Dependabot for GitHub Actions.
 - Add `CONTRIBUTING.md`.
+- Add `PRIVACY.md`, the Codex marketplace policy, and the Codex interface links and screenshot.
