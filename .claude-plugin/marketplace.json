@@ -1,0 +1,31 @@
+{
+  "name": "proxmox-writing-style",
+  "owner": {
+    "name": "Mekan Soltanov",
+    "url": "https://github.com/msoltanov"
+  },
+  "description": "Unofficial skill for the Proxmox Technical Writing Style Guide.",
+  "plugins": [
+    {
+      "name": "proxmox-writing-style",
+      "source": "./",
+      "description": "Unofficial skill. Write, edit, and review Proxmox technical documentation with the rules of the Proxmox Technical Writing Style Guide.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Mekan Soltanov",
+        "url": "https://github.com/msoltanov"
+      },
+      "homepage": "https://github.com/msoltanov/Proxmox-Technical-Writing-Style-Skill",
+      "repository": "https://github.com/msoltanov/Proxmox-Technical-Writing-Style-Skill",
+      "license": "MIT",
+      "keywords": [
+        "proxmox",
+        "proxmox-ve",
+        "technical-writing",
+        "documentation",
+        "style-guide"
+      ],
+      "category": "productivity"
+    }
+  ]
+}

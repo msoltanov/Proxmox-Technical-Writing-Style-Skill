@@ -1,6 +1,14 @@
 ---
 name: proxmox-writing-style
-description: Write, edit, or review Proxmox technical documentation in the Proxmox Technical Writing Style Guide voice.
+description: >-
+  Unofficial skill for the Proxmox Technical Writing Style Guide. Use it to
+  write, edit, or review Proxmox documentation: Proxmox VE, Proxmox Backup
+  Server, and Proxmox Mail Gateway admin guides, wiki pages, how-to guides,
+  procedures, release notes, and UI text. Also use it when the user asks for
+  the Proxmox style, the Proxmox wiki style, or a style review of Proxmox
+  text. It covers voice, mood, sentence length, procedures, headings,
+  punctuation, product names, terms, abbreviations, and examples.
+license: MIT
 metadata:
   source_url: https://pve.proxmox.com/wiki/Technical_Writing_Style_Guide
   source_revision: "12596"
@@ -11,6 +19,10 @@ metadata:
 # Proxmox Writing Style
 
 Use this skill for Proxmox technical documentation, how-to guides, release notes, procedures, and user-facing technical text.
+
+For before and after rewrites of each rule, read [references/examples.md](references/examples.md).
+
+When you review text, report each problem with the rule, the problem text, and a correct rewrite.
 
 ## Workflow
 

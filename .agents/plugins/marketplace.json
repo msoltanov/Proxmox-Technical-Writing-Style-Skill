@@ -1,0 +1,16 @@
+{
+  "name": "proxmox-writing-style",
+  "interface": {
+    "displayName": "Proxmox Writing Style"
+  },
+  "plugins": [
+    {
+      "name": "proxmox-writing-style",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
