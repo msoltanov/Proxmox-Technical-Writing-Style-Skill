@@ -96,12 +96,24 @@ To start the skill, type `$proxmox-writing-style`. Codex also loads the skill wh
 
 ## ChatGPT
 
-ChatGPT does not install skill folders from this repository. Use a custom GPT:
+ChatGPT no longer lets personal accounts create custom GPTs. OpenAI retires GPTs on December 11, 2026. Plugins and skills replace them.
 
-1. In ChatGPT, open **GPTs** > **Create** > **Configure**.
-2. Copy the text of `SKILL.md` after the second `---` line into **Instructions**.
-3. Upload `references/examples.md` as a **Knowledge** file.
-4. Save the GPT.
+The plugin is not in the ChatGPT plugin directory yet. Until then, use one of these methods. Both need `proxmox-writing-style.zip` from the release page of this repository.
+
+Upload the skill:
+
+1. In ChatGPT, click your profile icon, and then click **Skills**.
+2. Click **New skill** > **Upload from your computer**.
+3. Select `proxmox-writing-style.zip`.
+
+If **Skills** is not in the menu, your plan does not have skill upload. Use the next method.
+
+Make a private plugin:
+
+1. In ChatGPT, open the **Plugin Creator** plugin.
+2. Attach `proxmox-writing-style.zip`.
+3. Ask Plugin Creator to make a skill-only plugin from the zip, with the skill files unchanged.
+4. Save the plugin. It is private to your account.
 
 ## Cline
 
