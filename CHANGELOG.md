@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Shorten the Codex short description to 27 characters. The limit is 30.
+
 ## 1.0.0
 
 - Add the `proxmox-writing-style` skill. The rules come from revision `12596` of the Proxmox Technical Writing Style Guide.
