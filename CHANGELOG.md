@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Shorten the Codex short description to 27 characters. The limit is 30.
+- Replace the custom GPT steps in `docs/install.md` with the ChatGPT skill upload and Plugin Creator steps.
 
 ## 1.0.0
 
